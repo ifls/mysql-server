@@ -1230,8 +1230,10 @@ BOOL windows_ctrl_handler(DWORD fdwCtrlType) {
   return false;
 }
 #endif
-
+// 客户端 mysql main 函数入口
 int main(int argc, char *argv[]) {
+  printf("mysql client main running");
+  fprintf(stderr, "mysql client main running");
   char buff[80];
 
   MY_INIT(argv[0]);
