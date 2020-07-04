@@ -44,7 +44,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */
   Add new commands to the end of this list, otherwise old
   servers won't be able to handle them as 'unsupported'.
 */
-enum enum_server_command {
+enum enum_server_command {  // 服务器命令枚举定义
   /**
     Currently refused by the server. See ::dispatch_command.
     Also used internally to mark the start of a session.
