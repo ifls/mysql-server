@@ -1,3 +1,4 @@
+#include <cstdio>
 /* Copyright (c) 2009, 2018, Oracle and/or its affiliates. All rights reserved.
 
    This program is free software; you can redistribute it and/or modify
@@ -21,5 +22,9 @@
    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA */
 
 extern int mysqld_main(int argc, char **argv);
-
-int main(int argc, char **argv) { return mysqld_main(argc, argv); }
+//编译调试参考链接 https://www.jianshu.com/p/fd9beb91ad66
+// mysqld main 函数入口
+int main(int argc, char **argv) {
+  fprintf(stderr, "mysqld server main running");
+  return mysqld_main(argc, argv);
+}
