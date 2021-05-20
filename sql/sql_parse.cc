@@ -5180,7 +5180,7 @@ bool create_select_for_variable(Parse_context *pc, const char *var_name) {
 */
 
 /**
-  Parse a query.
+  Parse a query. 接续 sql语句
 
   @param thd          Current session.
   @param parser_state Parser state.

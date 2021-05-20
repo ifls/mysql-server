@@ -25,6 +25,6 @@ extern int mysqld_main(int argc, char **argv);
 //编译调试参考链接 https://www.jianshu.com/p/fd9beb91ad66
 // mysqld main 函数入口
 int main(int argc, char **argv) {
-  fprintf(stderr, "mysqld server main running");
+  fprintf(stdout, "heyifeng_learn mysqld server main running");
   return mysqld_main(argc, argv);
 }
